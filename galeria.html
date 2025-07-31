@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería - PixelGamer</title>
+  <link rel="stylesheet" href="galeria.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Barra de navegación retro -->
+  <nav class="navbar">
+    <div class="logo">🕹️ PIXELGAMER</div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre.html">Nosotros</a></li>
+      <li><a href="galeria.html" class="active">Galería</a></li>
+      <li><a href="descarga.html">Descarga</a></li>
+      <li><a href="equipo.html">Equipo</a></li>
+      <li><a href="sala-arcade.html">Juegos</a></li>
+      <li><a href="bitpedia.html">Bitpedia</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección de la galería -->
+  <section class="section galeria">
+    <h2>🖼️ Galería</h2>
+    <p>Explora nuestras categorías y disfruta del arte pixelado</p>
+
+    <!-- Botón para ver como slideshow -->
+    <button class="pixel-button slideshow-btn" onclick="iniciarSlideshow()">▶ Ver como pase de diapositivas</button>
+
+    <!-- Categoría: Fondos -->
+    <div class="gallery-category">
+      <h3>🌄 Fondos</h3>
+      <div class="gallery">
+        <div class="img-box">
+          <img src="img/gato-1.jpg" alt="Fondo 1" onclick="abrirLightbox(this)">
+          <p class="caption">Bosque pixelado de nivel 1</p>
+        </div>
+        <div class="img-box">
+          <img src="img/gato-2.jpg" alt="Fondo 2" onclick="abrirLightbox(this)">
+          <p class="caption">Cielo estrellado retro</p>
+        </div>
+        <div class="img-box">
+          <img src="img/gato-1.jpg" alt="Fondo 1" onclick="abrirLightbox(this)">
+          <p class="caption">Bosque pixelado de nivel 1</p>
+        </div>
+        <div class="img-box">
+          <img src="img/gato-1.jpg" alt="Fondo 1" onclick="abrirLightbox(this)">
+          <p class="caption">Bosque pixelado de nivel 1</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categoría: Personajes -->
+    <div class="gallery-category">
+      <h3>👾 Personajes</h3>
+      <div class="gallery">
+        <div class="img-box">
+          <img src="img/gato-5.jpg" alt="NPC 1" onclick="abrirLightbox(this)">
+          <p class="caption">NPC guía del nivel 2</p>
+        </div>
+        <div class="img-box">
+          <img src="img/gato-4.jpg" alt="Jefe final" onclick="abrirLightbox(this)">
+          <p class="caption">Jefe del nivel volcánico</p>
+        </div>
+        <div class="img-box">
+          <img src="img/gato-4.jpg" alt="Jefe final" onclick="abrirLightbox(this)">
+          <p class="caption">Jefe del nivel volcánico</p>
+        </div>
+        <div class="img-box">
+          <img src="img/gato-4.jpg" alt="Jefe final" onclick="abrirLightbox(this)">
+          <p class="caption">Jefe del nivel volcánico</p>
+        </div>
+        <div class="img-box">
+          <img src="img/gato-4.jpg" alt="Jefe final" onclick="abrirLightbox(this)">
+          <p class="caption">Jefe del nivel volcánico</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categoría: HUD/Interfaz -->
+    <div class="gallery-category">
+      <h3>🖥️ HUD & UI</h3>
+      <div class="gallery">
+        <div class="img-box">
+          <img src="img/gato-3.jpg" alt="HUD básico" onclick="abrirLightbox(this)">
+          <p class="caption">Interfaz clásica de vida y puntuación</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox para ampliar imágenes -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="cerrarLightbox()">✖</span>
+    <img id="lightbox-img" src="" alt="Imagen ampliada" />
+    <p id="lightbox-caption" class="caption"></p>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 PixelGamer Studio</p>
+  </footer>
+
+  <!-- Botón flotante de música -->
+  <button class="pixel-button floating-music" onclick="toggleMusic()">🎵 Música</button>
+
+  <!-- Música de fondo -->
+  <audio id="bg-music" loop>
+    <source src="music/retro-music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="galeria.js"></script>
+</body>
+</html>
