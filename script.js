@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // Función para manejar la descarga del juego
 function descargarJuego() {
   // Cambia esta ruta al enlace real de descarga
-  window.location.href = "https://drive.google.com/drive/my-drive?hl=es";
+  window.location.href = "https://drive.google.com/file/d/1YPN2KyZqb7IhjexFozjfnQDs_2VGzNDm/view?usp=drive_link";
 }
 
 
@@ -103,6 +103,7 @@ function updateNPCDialog() {
 // Ejecuta al cargar y al hacer scroll
 window.addEventListener('scroll', updateNPCDialog);
 window.addEventListener('load', updateNPCDialog);
+
 
 
 
