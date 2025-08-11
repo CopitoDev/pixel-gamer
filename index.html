@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelGamer</title>
+  <link rel="icon" href="https://i.pinimg.com/736x/27/13/0f/27130f52232cf752d30d3f1f763563c3.jpg" type="image/png" />
+  <!-- Fuente estilo consola retro -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navegación superior con logo y secciones -->
+  <nav class="navbar">
+  <div class="logo">
+    <img src="https://i.pinimg.com/736x/f0/33/e2/f033e21f27b481a524ad1cc98418cba0.jpg" alt="PixelGamer Logo" />
+    <span>PIXELGAMER</span>
+  </div>
+  <ul>
+    <li><a href="index.html" class="active">Inicio</a></li>
+    <li><a href="sobre.html">Nosotros</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+    <li><a href="descarga.html">Descarga</a></li>
+    <li><a href="equipo.html">Equipo</a></li>
+    <li><a href="sala-arcade.html">Juegos</a></li>
+    
+  </ul>
+</nav>
+
+
+  <!-- Sección de bienvenida -->
+  <header id="inicio" class="hero">
+    
+      <h1>BIENVENIDO A PIXELGAMER</h1>
+      <p>Una aventura pixelada que revive lo mejor del pixel-art</p>
+      <a href="#nosotros" class="pixel-button">Descubre Más ↓</a>
+    
+  </header>
+
+  <!-- Sección Sobre Nosotros -->
+  <section id="nosotros" class="section">
+    <h2>Situación significativa</h2>
+    <p>En la provincia de Arequipa los niños de 6 a 10 años se han estado enfermando debido al cambio climático que se está dando en la provincia, el UNICEF reportó un cambio climático que amenaza la vida, salud y el bienestar de niños y niñas, y esto les ha estado afectando mucho a su salud y actividades diarias.</p>
+
+    <div class="features">
+      <div class="card">
+        <h3>Mundos Pixelados</h3>
+        <p>Explora niveles hechos a mano llenos de detalles y secretos.</p>
+      </div>
+      <div class="card">
+        <h3> Banda Sonora</h3>
+        <p>Kevin MacLeod - Pixelland NO COPYRIGHT 8-bit Music.</p>
+      </div>
+      <div class="card">
+        <h3>Enemigos</h3>
+        <p>Enemigos brutales y mecánicas clásicas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de galería -->
+  <section id="galeria" class="section">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="img/inicio-fotos.jpg" alt="hfcvfh" />
+      <img src="img/personaje- player.jpg" alt="Captura 2" />
+      <img src="img/fondos-desierto ardiente.jpg" alt="Captura 3" />
+      <img src="img/personaje- sol.jpg" alt="Captura 4" />
+      <img src="img/fondos-bosque congelado.jpg" alt="Captura 5" />
+      <img src="img/HUD & UI.jpg" alt="Captura 3" />
+    </div>
+  </section>
+
+  <!-- Sección de descarga -->
+  <section id="descarga" class="section download">
+    <h2>⬇️ Descarga la Demo</h2>
+    <p>¡Ya disponible para Windows!</p>
+    <button class="pixel-button" onclick="descargarJuego()">Descargar Demo</button>
+  </section>
+
+  <!-- Pie de página con botón de música -->
+  <footer>
+    <p>© 2025 PixelGamer Studio. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón flotante de música -->
+  <button class="pixel-button floating-music" onclick="toggleMusic()">🎵 Música</button>
+
+  <!-- Música de fondo -->
+  <audio id="bg-music" loop>
+    <source src="music/retro-music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Coloca esto dentro del <body>, cerca del botón de música -->
+
+<!-- NPC flotante -->
+<div class="npc-container" id="npc">
+  <div class="dialog-bubble" id="npc-dialog">¡Hola jugador!</div>
+  <img src="img/fox2.gif" alt="NPC Pixelado" />
+</div>
+
+
+  <!-- Script externo -->
+  <script src="script.js"></script>
+</body>
+</html>

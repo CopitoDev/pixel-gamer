@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería - PixelGamer</title>
+  <link rel="stylesheet" href="galeria.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Barra de navegación retro -->
+  <nav class="navbar">
+    <div class="logo">🕹️ PIXELGAMER</div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre.html">Nosotros</a></li>
+      <li><a href="galeria.html" class="active">Galería</a></li>
+      <li><a href="descarga.html">Descarga</a></li>
+      <li><a href="equipo.html">Equipo</a></li>
+      <li><a href="sala-arcade.html">Juegos</a></li>
+  
+    </ul>
+  </nav>
+
+  <!-- Sección de la galería -->
+  <section class="section galeria">
+    <h2>Galería</h2>
+    <p>Explora y disfruta del arte pixelado</p>
+
+    <!-- Botón para ver como slideshow -->
+    <button class="pixel-button slideshow-btn" onclick="iniciarSlideshow()">▶ Ver como pase de diapositivas</button>
+
+    <!-- Categoría: Personajes -->
+    <div class="gallery-category">
+      <h3>Personajes</h3>
+      <div class="gallery">
+        <div class="img-box">
+          <img src="img/personajes-muñeco de nieve.jpg" alt="NPC 1" onclick="abrirLightbox(this)">
+          <p class="caption">Muñeco de nieve</p>
+        </div>
+        <div class="img-box">
+          <img src="img/personajes-nube de lluvia.jpg" alt="Jefe final" onclick="abrirLightbox(this)">
+          <p class="caption">Nube de Lluvia</p>
+        </div>
+        <div class="img-box">
+          <img src="img/personaje- player.jpg" alt="Jefe final" onclick="abrirLightbox(this)">
+          <p class="caption">Jugador</p>
+        </div>
+        <div class="img-box">
+          <img src="img/personaje- sol.jpg" alt="Jefe final" onclick="abrirLightbox(this)">
+          <p class="caption">Sol</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categoría: Fondos -->
+    <div class="gallery-category">
+      <h3>Fondos</h3>
+      <div class="gallery">
+        <div class="img-box">
+          <img src="img/fondos-bosque congelado.jpg" alt="Fondo 1" onclick="abrirLightbox(this)">
+          <p class="caption">Bosque congelado</p>
+        </div>
+        <div class="img-box">
+          <img src="img/fondos-bosque.jpg" alt="Fondo 2" onclick="abrirLightbox(this)">
+          <p class="caption">Bosque</p>
+        </div>
+        <div class="img-box">
+          <img src="img/fondos-desierto ardiente.jpg" alt="Fondo 1" onclick="abrirLightbox(this)">
+          <p class="caption">Desierto ardiente</p>
+        </div>
+        <div class="img-box">
+          <img src="img/inicio-fotos.jpg" alt="Fondo 1" onclick="abrirLightbox(this)">
+          <p class="caption">Entrada</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categoría: HUD/Interfaz -->
+    <div class="gallery-category">
+      <h3>HUD & UI</h3>
+      <div class="gallery">
+        <div class="img-box">
+          <img src="img/HUD & UI.jpg" alt="HUD básico" onclick="abrirLightbox(this)">
+          <p class="caption">Interfaz clásica de vida, puntuación y cantidad de derrotas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox para ampliar imágenes -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="cerrarLightbox()">✖</span>
+    <img id="lightbox-img" src="" alt="Imagen ampliada" />
+    <p id="lightbox-caption" class="caption"></p>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 PixelGamer Studio</p>
+  </footer>
+
+  <!-- Botón flotante de música -->
+  <button class="pixel-button floating-music" onclick="toggleMusic()">🎵 Música</button>
+
+  <!-- Música de fondo -->
+  <audio id="bg-music" loop>
+    <source src="music/retro-game-arcade.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="galeria.js"></script>
+</body>
+</html>
